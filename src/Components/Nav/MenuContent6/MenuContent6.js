@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import { Route, Link } from "react-router-dom";
 import "./MenuContent6.scss";
-
 class MenuContent6 extends Component {
   render() {
     return (
@@ -14,7 +14,9 @@ class MenuContent6 extends Component {
           </div>
           <div className="MenuBanner">
             <div className="bannerImg">
-              <div className="bannerTitle">Tea Society</div>
+              <Link to="/account">
+                <div className="bannerTitle">Tea Society</div>
+              </Link>
             </div>
           </div>
         </div>

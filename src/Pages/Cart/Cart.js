@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CardItem from "./CardItem";
 import { config } from "../../config";
+import Nav from "./../../Components/Nav/Nav";
 import "./Cart.scss";
 
 class Cart extends Component {
