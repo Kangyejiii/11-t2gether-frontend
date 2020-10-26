@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+클론 영상 보러가기 : https://youtu.be/yGTx7MwCLDA
 
-## Available Scripts
+# T2 Tea 클론 프로젝트 
+호주 유명 티 브랜드 웹 사이트 클론
+https://www.t2tea.com/
 
-In the project directory, you can run:
+## 개발 인원 및 기간
+- 개발 기간: 2020/08/18 ~ 2020/08/28
+- 개발 인원: 프론트엔드 4명, 백엔드 2명
 
-### `npm start`
+## 팀원
+- 프론트엔드: 강예지, 김규영, 마상원, 오승하
+- 백엔드: 왕민욱, 이건규
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 기술 스택 및 구현 기능
+### 1. 기술 스택
+- JavaScript (ES6)
+- React (CRA)
+- Sass (SCSS)
+- Git /Github
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- 리액트 라이브러리
+    - Slick
+    - React-router-dom
+    
+### 2. 협업 툴
+- Git
+- Slack
+- Trello
 
-### `npm test`
+### 3. 구현 기능 상세 설명
+[ navigation 바 ]
+- setInterval 함수를 활용한 롤링 배너 구현
+- search icon 클릭 시 searchbar 표시 기능 구현
+- 컴포넌트 활용하여 메뉴 hover 시 세부 메뉴 보여지는 기능 구현
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[ 메인 페이지 ]
+- 컴포넌트를 재사용하여 각기다른 디자인의 섹션을 구현
+- 케러셀기능을 라이브러리를 사용하지않고 필요한 부분까지만 넣어서 가볍게 구현
 
-### `npm run build`
+[ product list 페이지 ]
+- 드롭다운 멀티 체크 박스 
+- 필터링 기능 
+- 장바구니 추가 기능, wishlist 추가 기능 구현
+- productItem Component 생성 후 사용
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[ product detail 페이지 ]
+- 동적 라우팅 활용하여 product list 페이지에서 상품 클릭 시 클릭한 상품에 해당하는 상세 페이지 보여주는 기능 구현
+- react slick 라이브러리로 이미지 슬라이더 구현
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[ 로그인 페이지 ]
+- 이메일 및 비밀번호 형식 불일치 시 경고 표시
+- 비밀번호 조건 : 8 자리 이상, 대문자 1개 포함, 숫자 1개 포함
+- 이메일 형식(@포함) 일치 시 확인 버튼 표시
+- 로그인 성공 시 메인페이지로 이동 
+- 조건식(3가지)
+  0글자일때, 1글자이상 조건에 만족못했을때, 조건에 만족했을때
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[ 회원가입 페이지 ] 
 
-### `npm run eject`
+- first name (1글자이상) 
+- last name(2글자이상)
+- phone 번호 11숫자
+- email형식 (@) 포함 
+- 생년월일 선택 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[ 장바구니 페이지 ]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- shop all tea 페이지에서 
+ add to bag 추가하면 장바구니에 추가되는 기능 
+- 장바구니 아이콘 클릭시 모달창 띄우기 
+- 모달창에서 Remove 클릭시 아이템 삭제 
+- 장바구니 아이템 자동 계산 출력 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[ 마이 페이지 ]
+- wishlist를 보여주는 페이지 구현 
+- 삭제 기능 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[ 검색 페이지 ]
+- 동적라우팅을 이용해서 검색한 값을 각 주소마다 다르게 보여주게 구현
+- 검색값에 따라서 다른 컴포넌트를 이용하여 페이지 구성을 표현하게 설계
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[ footer ]
+- map 활용하여 반복되는 list 요소 재사용
